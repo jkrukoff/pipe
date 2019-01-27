@@ -1,0 +1,11 @@
+{application, pipe,
+ [{description, "Utility library for chaining function application."},
+  {vsn, "1.0.0"},
+  {applications, [kernel,
+                  stdlib]},
+  {modules, [pipe]},
+  {registered, []},
+  {env, []},
+  {licenses, ["Apache 2.0"]},
+  {links, [{"GitHub", "https://github.com/jkrukoff/pipe_line"}]},
+  {extra, [{maintainers, ["John Krukoff"]}]}]}.
