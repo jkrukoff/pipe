@@ -61,7 +61,7 @@ if_not_exception_test_() ->
                    pipe:if_not_exception(errors(exception), {ok, value}))].
 
 compose_test() ->
-    Composed = pipe:compose(fun pipe:if_ok/2, fun pipe:ignore/2),
+    Composed = pipe:compose([fun pipe:if_ok/2, fun pipe:ignore/2]),
     ?assertEqual(value, Composed(constant(computed), {ok, value})).
 
 via_test() ->
@@ -85,6 +85,10 @@ pipe_test_() ->
                                       {ok, value},
                                       [constant({ok, computed}),
                                        constant(computed)]))},
+     {"apply ordering",
+      ?_assertEqual({ok, value}, pipe:pipe([fun pipe:ignore/2, fun pipe:if_ok/2],
+                                           {ok, value},
+                                           [constant({ok, computed})]))},
      {"via",
       ?_assertEqual(value, pipe:pipe(fun pipe:if_ok/2,
                                      {ok, value},
