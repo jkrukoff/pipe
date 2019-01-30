@@ -277,6 +277,7 @@ the functionality described here could be layered.
 ### Attribution ###
 
 Image by Jukka Isokoski
+
 CC BY-SA 3.0 [`https://creativecommons.org/licenses/by-sa/3.0`](https://creativecommons.org/licenses/by-sa/3.0)
 
 
