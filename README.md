@@ -284,4 +284,4 @@ CC BY-SA 3.0 [`https://creativecommons.org/licenses/by-sa/3.0`](https://creative
 ## Modules ##
 
 <table width="100%" border="0" summary="list of modules">
-<tr><td><a href="http://github.com/jkrukoff/pipe_line/blob/master/doc/pipe.md" class="module">pipe</a></td></tr></table>
+<tr><td><a href="http://github.com/jkrukoff/pipe/blob/master/doc/pipe.md" class="module">pipe</a></td></tr></table>

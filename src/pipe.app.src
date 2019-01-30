@@ -8,5 +8,5 @@
   {registered, []},
   {env, []},
   {licenses, ["Apache 2.0"]},
-  {links, [{"GitHub", "https://github.com/jkrukoff/pipe_line"}]},
+  {links, [{"GitHub", "https://github.com/jkrukoff/pipe"}]},
   {extra, [{maintainers, ["John Krukoff"]}]}]}.
