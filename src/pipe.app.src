@@ -1,5 +1,6 @@
 {application, pipe,
- [{description, "Utility library for chaining function application."},
+ [{pkg_name, "pipe_line"},
+  {description, "Utility library for chaining function application."},
   {vsn, "1.0.0"},
   {applications, [kernel,
                   stdlib]},
