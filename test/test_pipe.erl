@@ -1,6 +1,6 @@
 %%%-------------------------------------------------------------------
 %%% @doc
-%%%
+%%% Tests for src/pipe.erl
 %%% @end
 %%%-------------------------------------------------------------------
 -module(test_pipe).
@@ -82,9 +82,9 @@ pipe_test_() ->
                                   not_commutative()]))},
      {"multiple applies",
       ?_assertEqual(value, pipe:pipe([fun pipe:if_ok/2, fun pipe:ignore/2],
-                                      {ok, value},
-                                      [constant({ok, computed}),
-                                       constant(computed)]))},
+                                     {ok, value},
+                                     [constant({ok, computed}),
+                                      constant(computed)]))},
      {"apply ordering",
       ?_assertEqual({ok, value}, pipe:pipe([fun pipe:ignore/2, fun pipe:if_ok/2],
                                            {ok, value},

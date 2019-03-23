@@ -1,9 +1,9 @@
 # pipe #
 
+![Pipeline Construction](doc/pipeline.jpg)
+
 
 ### Overview ###
-
-![Pipeline Construction](doc/pipeline.jpg)
 
 This is an Erlang/OTP library for piping a value through a list of functions,
 in the spirit of [Haskell's do
@@ -24,6 +24,12 @@ one of the pipe functions:
 
 The initial value is threaded through each function given and the final result
 is returned.
+
+
+## Modules ##
+
+<table width="100%" border="0" summary="list of modules">
+<tr><td><a href="http://github.com/jkrukoff/pipe/blob/master/doc/pipe.md" class="module">pipe</a></td></tr></table>
 
 
 ### Getting Started ###
@@ -279,9 +285,3 @@ the functionality described here could be layered.
 Image by Jukka Isokoski
 
 CC BY-SA 3.0 [`https://creativecommons.org/licenses/by-sa/3.0`](https://creativecommons.org/licenses/by-sa/3.0)
-
-
-## Modules ##
-
-<table width="100%" border="0" summary="list of modules">
-<tr><td><a href="http://github.com/jkrukoff/pipe/blob/master/doc/pipe.md" class="module">pipe</a></td></tr></table>

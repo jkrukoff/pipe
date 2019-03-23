@@ -125,12 +125,12 @@ if_not_error(Fun, Value) ->
 ?SPEC_MONAD(if_not_throw).
 if_not_throw(Fun, Value) ->
     Try = fun (Unwrapped) ->
-        try Fun(Unwrapped)
-        catch
-            throw:Reason ->
-                exception_as_error(throw, Reason)
-        end
-    end,
+                  try Fun(Unwrapped)
+                  catch
+                      throw:Reason ->
+                          exception_as_error(throw, Reason)
+                  end
+          end,
     case Value of
         {ok, Ok} ->
             Try(Ok);
