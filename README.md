@@ -275,7 +275,7 @@ optional library.
 [Datum](https://github.com/fogfish/datum) were both useful resources in
 understanding how to adapt haskell's monads to a dynamically typed language.
 However, this [mailing list
-discussion](http://erlang.org/pipermail/erlang-questions/2015-July/085109.md)
+discussion](http://erlang.org/pipermail/erlang-questions/2015-July/085109.html)
 ended up being closest to what I ultimately decided to build and hinted at how
 the functionality described here could be layered.
 
